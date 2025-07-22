@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/* ノートパソコン */
+@media screen and (min-width: 481px) and (max-width: 1366px) {
+    .scrollTopButton {
+        position: fixed;
+        bottom: 32px;
+        right: 32px;
+        background-color: #ff80ab;
+        color: white;
+        font-size: 24px;
+        width: 48px;
+        height: 48px;
+        border: none;
+        border-radius: 50%;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        z-index: 999;
+        transition: background-color 0.2s ease;
+    }
+
+    .scrollTopButton:hover {
+        background-color: #e91e63;
+    }
+
+}
+
+/* モニタ */
+@media screen and (min-width: 1367px) {}
+
+@media screen and (max-width: 480px) {}

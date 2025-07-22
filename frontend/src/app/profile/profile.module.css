@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+/* 共通 */
+.images figcaption {
+    font-family: var(--font-zenmaru-gothic);
+    margin-top: 8px;
+    font-size: 12px;
+    transform: none;
+    font-weight: bold;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.barbatos,
+.kongo,
+.destiny,
+.ares {
+    height: auto;
+    object-fit: contain;
+    aspect-ratio: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.images figure {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.destinyDetail {
+    line-height: 0.8rem;
+}
+
+.barbatosWrapper,
+.destinyWrapper,
+.kongoWrapper,
+.aresWrapper {
+    position: absolute;
+    border-radius: 5px;
+}
+
+.barbatosWrapper {
+    rotate: -8deg;
+}
+
+.destinyWrapper {
+    rotate: 5deg;
+}
+
+.kongoWrapper {
+    rotate: -5deg;
+}
+
+.aresWrapper {
+    rotate: -5deg;
+}
+
+.btnWrapper {
+    display: block;
+    text-align: center;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 80px;
+}
+
+.goToSNSPage {
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* ノートパソコン */
+@media screen and (min-width: 481px) and (max-width: 1366px) {
+    .pageMain {
+        height: 1000px;
+        position: relative;
+    }
+
+    .barbatosWrapper {
+        width: 250px;
+        margin-left: -550px;
+        top: 150px;
+        left: unset;
+    }
+
+    .destinyWrapper {
+        width: 250px;
+        top: 150px;
+        left: unset;
+    }
+
+    .kongoWrapper {
+        width: 300px;
+        top: 400px;
+        left: 350px;
+    }
+
+    .aresWrapper {
+        width: 250px;
+        height: 180px;
+        top: 170px;
+        left: 600px;
+    }
+}
+
+/* モニタ */
+@media screen and (min-width: 1367px) {
+    .pageMain {
+        height: 1000px;
+        position: relative;
+    }
+
+    .barbatosWrapper {
+        width: 325px;
+        margin-left: 0;
+        top: 180px;
+        left: 40px;
+    }
+
+    .destinyWrapper {
+        width: 380px;
+        top: 160px;
+        left: 530px;
+    }
+
+    .kongoWrapper {
+        width: 390px;
+        top: 590px;
+        left: 480px;
+    }
+
+    .aresWrapper {
+        width: 423px;
+        height: 304px;
+        top: 240px;
+        left: 950px;
+    }
+}
+
+/* スマホ */
+@media screen and (max-width: 480px) {
+
+    .barbatos,
+    .kongo,
+    .destiny,
+    .ares {
+        display: none;
+    }
+
+    .images figcaption {
+        display: none;
+    }
+}

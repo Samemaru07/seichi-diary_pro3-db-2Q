@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+/* 共通 */
+.header {
+    position: relative;
+    text-align: center;
+    font-family: "Yusei Magic", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.rotateName {
+    position: absolute;
+    transform: rotate(-10deg);
+    margin-top: 10px;
+}
+
+.mainTitle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ノートパソコン */
+@media screen and (min-width: 481px) and (max-width: 1366px) {
+    .header {
+        height: 80px;
+    }
+
+    .rotateName {
+        margin-left: 300px;
+        font-size: 1.5rem;
+    }
+
+    .mainTitle {
+        font-size: 2.5rem;
+    }
+}
+
+/* モニタ */
+@media screen and (min-width: 1367px) {
+    .header {
+        height: 100px;
+        font-family: var(--font-header);
+    }
+
+    .rotateName {
+        margin-left: 500px;
+        font-size: 35px;
+    }
+
+    .mainTitle {
+        font-size: 55px;
+    }
+}
+
+/* スマホ */
+@media screen and (max-width: 480px) {
+    .header {
+        height: 80px;
+    }
+
+    .rotateName {
+        position: absolute;
+        right: 30px;
+        transform: rotate(20deg);
+        margin-top: 15px;
+    }
+
+    .mainTitle {
+        font-size: 21px;
+    }
+}

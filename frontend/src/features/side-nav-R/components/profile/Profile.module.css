@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+/* 共通 */
+.navTitle {
+    margin-left: 2px;
+    align-items: center;
+}
+
+.navTitleText {
+    font-family: var(--font-header);
+}
+
+.profileIcon {
+    /* モニタのみmargin-left指定 */
+}
+
+.mainTitle {
+    display: flex;
+    align-items: center;
+}
+
+.halo {
+    border-radius: 50%;
+}
+
+.samemaru {
+    font-family: var(--font-zenmaru-gothic);
+}
+
+.contents {
+    font-family: var(--font-zenmaru-gothic);
+    color: var(--text);
+}
+
+.profBody {
+    border-radius: 5px;
+    display: block;
+}
+
+.body {
+    display: block;
+    position: static;
+    justify-content: center;
+    filter: drop-shadow(0 0 0 var(--text));
+    transition: filter 0.3s ease;
+    color: var(--text);
+}
+
+.body:hover {
+    filter: drop-shadow(0 0 10px var(--text));
+}
+
+.main {
+    background-color: var(--profileBackground);
+}
+
+/* ノートパソコン */
+@media screen and (min-width: 481px) and (max-width: 1366px) {
+    .navTitleText {
+        font-size: 20px;
+        margin-left: -1px;
+    }
+
+    .mainTitle {
+        margin-left: 5px;
+        padding-top: 5px;
+    }
+
+    .samemaru {
+        margin-left: 10px;
+        font-size: 20px;
+    }
+
+    .contents {
+        font-size: 13px;
+        padding: 0 8px;
+        padding-top: 5px;
+        line-height: 1.5rem;
+    }
+
+    .profBody {
+        width: 160px;
+        padding-bottom: 30px;
+    }
+
+    .body {
+        width: 160px;
+        margin: 0 15px;
+    }
+
+    .main {
+        border-radius: 10px;
+        height: 150px;
+    }
+}
+
+/* モニタ */
+@media screen and (min-width: 1367px) {
+    .navTitle {
+        display: flex;
+    }
+
+    .navTitleText {
+        font-size: 26px;
+        margin-left: 0;
+    }
+
+    .profileIcon {
+        margin-left: -15px;
+    }
+
+    .mainTitle {
+        margin-left: 7px;
+        padding-top: 7px;
+    }
+
+    .samemaru {
+        margin-left: 13px;
+        font-size: 26px;
+    }
+
+    .contents {
+        font-size: 15px;
+        padding: 0 10px;
+        padding-top: 7px;
+        line-height: 1.7rem;
+        text-align: left;
+    }
+
+    .profBody {
+        width: 190px;
+        padding-bottom: 39px;
+        margin: 0 auto;
+    }
+
+    .body {
+        width: 190px;
+        margin: 0 auto;
+    }
+
+    .main {
+        border-radius: 13px;
+        height: 195px;
+    }
+}
+
+/* スマホ */
+@media screen and (max-width: 480px) {}

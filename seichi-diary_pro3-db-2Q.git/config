@@ -1,0 +1,9 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = true
+	ignorecase = true
+[remote "origin"]
+	url = https://github.com/Samemaru07/seichi-diary_pro3-db-2Q.git
+	fetch = +refs/*:refs/*
+	mirror = true

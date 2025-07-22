@@ -1,0 +1,717 @@
+@charset "UTF-8";
+
+/* ノートパソコン */
+@media screen and (min-width: 481px) and (max-width: 1366px) {
+    .goodBtn {
+        padding: 8px 20px;
+        border-radius: 9999px;
+        font-weight: 600;
+        font-size: 16px;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .goodBtn:hover {
+        transform: scale(1.05);
+    }
+
+    .good {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .good p {
+        font-size: 14px;
+        margin-left: 18px;
+    }
+
+    .commentTopWrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+
+    .userName {
+        font-weight: bold;
+        color: var(--text);
+    }
+
+    .date {
+        margin-left: 30px;
+        color: var(--text);
+    }
+
+    .commentH3 {
+        margin-bottom: 20px;
+    }
+
+    .comment {
+        background-color: var(--commentBackground);
+        padding: 1px 20px 5px;
+        border-radius: 5px;
+    }
+
+    .commentContent {
+        margin-bottom: 20px;
+        color: var(--text);
+
+    }
+
+    .commentContainer {
+        display: flex;
+        align-items: end;
+        margin-bottom: 50px;
+    }
+
+    .submitBtn {
+        width: 70px;
+        background-color: var(--commentSubmitBtn);
+        padding: 5px 0;
+        border-radius: 10px;
+        margin-left: 20px;
+        font-family: var(--font-contents);
+        font-weight: bold;
+    }
+
+    .newUsername {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .newUsernameInput {
+        border: solid var(--text) 1px;
+        margin-left: 10px;
+        border-radius: 5px;
+        padding: 0 10px;
+        color: #000000;
+    }
+
+    .newComment {
+        width: 600px;
+        height: 100px;
+        border: solid var(--text) 1px;
+        border-radius: 5px;
+        padding: 10px 10px;
+        color: #000000;
+    }
+
+    .replyWrapper {
+        margin-left: 2rem;
+        padding-left: 1rem;
+        border-left: 2px solid #ccc;
+        margin-top: 0.5rem;
+    }
+
+    .replyToggleBtn {
+        margin-bottom: 20px;
+        border-bottom: solid #333 2px;
+        color: var(--text);
+    }
+
+    .replyNameInput {
+        display: block;
+        margin-bottom: 10px;
+        color: #000000;
+    }
+
+    .replyTextarea {
+        width: 300px;
+        height: 100px;
+        color: #000000;
+    }
+
+    .replySubmitBtn {
+        color: #000000;
+        background-color: var(--commentSubmitBtn);
+        padding: 5px 5px;
+        border-radius: 5px;
+        margin-left: 10px;
+        position: absolute;
+        margin-top: 65px;
+    }
+
+    /* 共通 */
+    .markdownWrapper {
+        display: block;
+        background-color: var(--markdownWrapperBackground);
+        border-radius: 12px;
+        line-height: 1.8;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+        white-space: pre-wrap;
+        color: var(--text);
+        padding: 24px;
+    }
+
+    .markdownWrapper p {
+        margin-top: 12px;
+        margin-bottom: 12px;
+        font-size: 19px;
+        line-height: 1.8;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+        color: var(--text);
+        font-family: var(--font-contents);
+    }
+
+    .markdownWrapper h1 {
+        font-size: 32px;
+        border-bottom: 2px solid #e0e0e0;
+        padding-bottom: 5px;
+        margin-top: 32px;
+        margin-bottom: 16px;
+        font-weight: bold;
+        line-height: 1.4;
+        color: var(--markdownText);
+    }
+
+    .markdownWrapper h2 {
+        font-size: 28px;
+        border-left: 4px solid var(--markdownH2Border);
+        padding-left: 8px;
+        margin-top: 28px;
+        margin-bottom: 14px;
+        font-weight: bold;
+        line-height: 1.4;
+        color: var(--markdownText);
+    }
+
+    .markdownWrapper h3 {
+        font-size: 24px;
+        margin-top: 24px;
+        margin-bottom: 12px;
+        font-weight: bold;
+        line-height: 1.4;
+        color: var(--markdownText);
+    }
+
+    .markdownWrapper a {
+        color: var(--linkText);
+        text-decoration: underline;
+        word-break: break-all;
+    }
+
+    .markdownWrapper ul,
+    .markdownWrapper ol {
+        padding-left: 32px;
+        margin-bottom: 16px;
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .markdownWrapper blockquote {
+        padding: 12px 16px;
+        background-color: var(--blockquoteBackground);
+        border-left: 4px solid var(--blockquoteBorder);
+        color: var(--blockquoteText);
+        margin: 24px 0;
+        font-style: italic;
+    }
+
+    .markdownWrapper img {
+        max-width: 100%;
+        height: auto;
+        margin: 16px 0;
+        display: block;
+        border-radius: 8px;
+    }
+
+    .markdownWrapper strong {
+        color: var(--text);
+    }
+
+    /* 共通 */
+    .commentTitle {
+        font-weight: bold;
+        text-align: left;
+        margin-bottom: 18px;
+        color: var(--text);
+        font-family: var(--font-contents);
+    }
+
+    .sectionMargin {
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+}
+
+/* モニタ */
+@media screen and (min-width: 1367px) {
+    .goodBtn {
+        padding: 10px 24px;
+        border-radius: 9999px;
+        font-weight: 600;
+        font-size: 18px;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .goodBtn:hover {
+        transform: scale(1.05);
+    }
+
+    .good {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .good p {
+        font-size: 16px;
+        margin-left: 22px;
+    }
+
+    .commentTopWrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+
+    .userName {
+        font-weight: bold;
+        color: var(--text);
+        border: 1px solid var(--text);
+    }
+
+    .date {
+        margin-left: 30px;
+        color: var(--text);
+    }
+
+    .commentH3 {
+        margin-bottom: 20px;
+    }
+
+    .comment {
+        background-color: var(--commentBackground);
+        padding: 1px 20px 5px;
+        border-radius: 5px;
+    }
+
+    .commentContent {
+        margin-bottom: 20px;
+        color: var(--text);
+    }
+
+    .commentContainer {
+        display: flex;
+        align-items: end;
+        margin-bottom: 50px;
+    }
+
+    .submitBtn {
+        width: 70px;
+        background-color: var(--commentSubmitBtn);
+        padding: 5px 0;
+        border-radius: 10px;
+        margin-left: 20px;
+        font-family: var(--font-contents);
+        font-weight: bold;
+    }
+
+    .newUsername {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .newUsernameInput {
+        border: solid var(--text) 1px;
+        margin-left: 10px;
+        border-radius: 5px;
+        padding: 0 10px;
+        color: #000000;
+    }
+
+    .newComment {
+        width: 600px;
+        height: 100px;
+        border: solid var(--text) 1px;
+        border-radius: 5px;
+        padding: 10px 10px;
+        color: #000000;
+    }
+
+    .replyWrapper {
+        margin-left: 2rem;
+        padding-left: 1rem;
+        border-left: 2px solid #ccc;
+        margin-top: 0.5rem;
+    }
+
+    .replyToggleBtn {
+        margin-bottom: 20px;
+        border-bottom: solid #333 2px;
+        color: var(--text);
+    }
+
+    .replyNameInput {
+        display: block;
+        margin-bottom: 10px;
+        color: #000000;
+    }
+
+    .replyTextarea {
+        width: 300px;
+        height: 100px;
+        color: #000000;
+    }
+
+    .replySubmitBtn {
+        color: #000000;
+        background-color: var(--commentSubmitBtn);
+        padding: 5px 5px;
+        border-radius: 5px;
+        margin-left: 10px;
+        position: absolute;
+        margin-top: 65px;
+    }
+
+    /* 共通 */
+    .markdownWrapper {
+        display: block;
+        background-color: var(--markdownWrapperBackground);
+        border-radius: 12px;
+        line-height: 1.8;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+        white-space: pre-wrap;
+        color: var(--text);
+        padding: 24px;
+    }
+
+    .markdownWrapper p {
+        margin-top: 12px;
+        margin-bottom: 12px;
+        font-size: 21px;
+        line-height: 1.8;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+        color: var(--text);
+        font-family: var(--font-contents);
+    }
+
+    .markdownWrapper h1 {
+        font-size: 32px;
+        border-bottom: 2px solid #e0e0e0;
+        padding-bottom: 5px;
+        margin-top: 32px;
+        margin-bottom: 16px;
+        font-weight: bold;
+        line-height: 1.4;
+        color: var(--markdownText);
+    }
+
+    .markdownWrapper h2 {
+        font-size: 28px;
+        border-left: 4px solid var(--markdownH2Border);
+        padding-left: 8px;
+        margin-top: 28px;
+        margin-bottom: 14px;
+        font-weight: bold;
+        line-height: 1.4;
+        color: var(--markdownText);
+    }
+
+    .markdownWrapper h3 {
+        font-size: 24px;
+        margin-top: 24px;
+        margin-bottom: 12px;
+        font-weight: bold;
+        line-height: 1.4;
+        color: var(--markdownText);
+    }
+
+    .markdownWrapper a {
+        color: var(--linkText);
+        text-decoration: underline;
+        word-break: break-all;
+    }
+
+    .markdownWrapper ul,
+    .markdownWrapper ol {
+        padding-left: 32px;
+        margin-bottom: 16px;
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .markdownWrapper blockquote {
+        padding: 12px 16px;
+        background-color: var(--blockquoteBackground);
+        border-left: 4px solid var(--blockquoteBorder);
+        color: var(--blockquoteText);
+        margin: 24px 0;
+        font-style: italic;
+    }
+
+    .markdownWrapper img {
+        max-width: 100%;
+        height: auto;
+        margin: 16px 0;
+        display: block;
+        border-radius: 8px;
+    }
+
+    .markdownWrapper strong {
+        color: var(--text);
+    }
+
+    .commentTitle {
+        font-size: 2.5rem;
+        margin-bottom: 32px;
+        font-family: var(--font-contents);
+    }
+
+    .sectionMargin {
+        margin-top: 72px;
+        margin-bottom: 72px;
+    }
+}
+
+/* スマホ */
+@media screen and (max-width: 480px) {
+    .good {
+        margin-top: 24px;
+        justify-content: flex-end;
+        width: 120px;
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    .goodBtn {
+        font-size: 15px;
+        padding: 8px 16px;
+    }
+
+    .good p {
+        font-size: 13px;
+        margin-left: 10px;
+    }
+
+    .markdownWrapper {
+        padding: 12px;
+        font-size: 15px;
+        border-radius: 8px;
+        background-color: var(--markdownWrapperBackground);
+        color: var(--markdownText);
+    }
+
+    .markdownWrapper p {
+        font-size: 16px;
+        color: var(--markdownText);
+    }
+
+    .markdownWrapper h1 {
+        font-size: 22px;
+        margin-top: 18px;
+        margin-bottom: 10px;
+        color: var(--markdownText);
+    }
+
+    .markdownWrapper h2 {
+        font-size: 18px;
+        margin-top: 14px;
+        margin-bottom: 8px;
+        padding-left: 4px;
+        color: var(--markdownText);
+        border-left: 4px solid var(--markdownH2Border);
+    }
+
+    .markdownWrapper h3 {
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 6px;
+        color: var(--markdownText);
+    }
+
+    .markdownWrapper a {
+        color: var(--linkText);
+    }
+
+    .markdownWrapper ul,
+    .markdownWrapper ol {
+        color: var(--markdownText);
+    }
+
+    .markdownWrapper blockquote {
+        background-color: var(--blockquoteBackground);
+        border-left: 4px solid var(--blockquoteBorder);
+        color: var(--blockquoteText);
+    }
+
+    .markdownWrapper strong {
+        color: var(--markdownText);
+    }
+
+    .comment {
+        padding: 1px 8px 5px;
+    }
+
+    .commentContent {
+        font-size: 15px;
+    }
+
+    .commentTitle {
+        font-size: 1.3rem;
+        margin-bottom: 18px;
+    }
+
+    .sectionMargin {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .newComment {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        height: 60px;
+        font-size: 15px;
+        padding: 8px;
+    }
+
+    .newUsernameInput {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        font-size: 15px;
+        padding: 6px;
+    }
+
+    .submitBtn {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 8px;
+        font-size: 15px;
+        padding: 8px 0;
+    }
+
+    .replyTextarea {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        height: 60px;
+        font-size: 15px;
+        padding: 8px;
+    }
+
+    .replyNameInput {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        font-size: 15px;
+        padding: 6px;
+    }
+
+    .replySubmitBtn {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 8px;
+        font-size: 15px;
+        padding: 8px 0;
+        position: static;
+    }
+
+    .replyWrapper {
+        margin-left: 1rem;
+        padding-left: 0.5rem;
+    }
+
+    .comment {
+        background-color: var(--commentBackground);
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .commentTopWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 5px;
+        gap: 4px;
+    }
+
+    .userName {
+        font-weight: bold;
+        font-size: 15px;
+        color: var(--text);
+    }
+
+    .date {
+        font-size: 13px;
+        color: var(--text);
+    }
+
+    .commentContent {
+        font-size: 15px;
+        margin-bottom: 10px;
+        color: var(--text);
+        line-height: 1.6;
+    }
+
+    .replyWrapper {
+        margin-left: 1rem;
+        padding-left: 0.5rem;
+        border-left: 2px solid #ccc;
+        margin-top: 0.5rem;
+    }
+
+    .replyToggleBtn {
+        width: 100%;
+        font-size: 14px;
+        padding: 6px 0;
+        border-bottom: solid #888 1px;
+        text-align: left;
+        background: transparent;
+        color: var(--text);
+    }
+
+    .replyForm {
+        margin-top: 10px;
+    }
+
+    .replyNameInput,
+    .replyTextarea,
+    .replySubmitBtn {
+        width: 100%;
+        font-size: 15px;
+        padding: 8px;
+        margin-bottom: 8px;
+    }
+
+    .replyTextarea {
+        height: 60px;
+    }
+
+    .replySubmitBtn {
+        background-color: var(--commentSubmitBtn);
+        color: #000;
+        border-radius: 6px;
+    }
+
+    .newUsername {
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+
+    .commentContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        margin-bottom: 24px;
+    }
+
+    .submitBtn {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10;
+        font-size: 15px;
+        padding: 10px 0;
+        border-radius: 6px;
+        margin-bottom: 50px;
+    }
+}

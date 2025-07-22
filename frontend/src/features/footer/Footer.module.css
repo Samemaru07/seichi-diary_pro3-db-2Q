@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+.phoneWrapper {
+    display: none;
+    z-index: 200;
+}
+
+/* 共通 */
+.footer {
+    text-align: center;
+    max-width: 100%;
+    background-color: var(--footerBackground);
+}
+
+.letter {
+    color: var(--text);
+}
+
+/* ノートパソコン */
+@media screen and (min-width: 481px) and (max-width: 1366px) {
+    .footer {
+        display: block;
+    }
+
+    .letter {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+}
+
+/* モニタ */
+@media screen and (min-width: 1367px) {
+    .footer {
+        display: block;
+    }
+}
+
+/* スマホ */
+@media screen and (max-width: 480px) {
+    .footer {
+        display: none;
+    }
+
+    .phoneWrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        background-color: var(--phoneFooter);
+        border-top: 1px solid #ccc;
+        box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+    }
+
+    .phoneWrapper a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: inherit;
+        padding: 5px;
+    }
+
+    .phoneWrapper img {
+        width: 28px;
+        height: 28px;
+    }
+
+}

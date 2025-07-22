@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+/* ノートパソコン */
+@media screen and (min-width: 481px) and (max-width: 1366px) {
+
+    .nameBox,
+    .mailBox,
+    .commentBox,
+    .submitBtn {
+        background-color: var(--btn);
+    }
+
+    .labelName {
+        display: block;
+    }
+
+    .nameBox,
+    .mailBox {
+        width: 300px;
+        height: 30px;
+        border-radius: 5px;
+        margin-bottom: 50px;
+        padding: 10px;
+    }
+
+    .labelWrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .commentBox {
+        display: block;
+        margin: 0 auto;
+        width: 600px;
+        height: 150px;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .contactLabel {
+        margin-left: 125px;
+    }
+
+    .submitBtn {
+        display: block;
+        width: 100px;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 30px auto;
+        font-size: 25px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .submitBtn:hover {
+        background-color: var(--btnHover);
+        color: var(--textHover);
+    }
+
+}
+
+/* モニタ */
+@media screen and (min-width: 1367px) {}
+
+/* スマホ */
+@media screen and (max-width: 480px) {}

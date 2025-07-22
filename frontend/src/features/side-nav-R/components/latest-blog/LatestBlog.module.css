@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+/* ノートパソコン */
+@media screen and (min-width: 481px) and (max-width: 1366px) {
+    .navTitle {
+        margin-left: 5px;
+        margin-top: 30px;
+        margin-bottom: 8px;
+    }
+
+    .navTitleText {
+        font-size: 20px;
+        margin-left: 5px;
+    }
+
+    .latestBlog {
+        font-family: var(--font-zenmaru-gothic);
+        font-size: 14.5px;
+    }
+
+    .latestBlogList {
+        margin-bottom: 13px;
+        margin-left: 8px;
+        position: relative;
+    }
+
+    .latestBlog::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 1.5px;
+        background-color: var(--text);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.2s ease;
+    }
+
+    .latestBlog:hover::after {
+        transform: scaleX(1);
+    }
+}
+
+/* スマホ */
+@media screen and (max-width: 480px) {}
+
+/* モニタ */
+@media screen and (min-width: 1367px) {
+    .navTitle {
+        margin-left: 7px;
+        margin-top: 39px;
+        margin-bottom: 10px;
+    }
+
+    .navTitleText {
+        font-size: 26px;
+        margin-left: 7px;
+    }
+
+    .latestBlog {
+        font-family: var(--font-zenmaru-gothic);
+        font-size: 17px;
+    }
+
+    .latestBlogList {
+        margin-bottom: 17px;
+        margin-left: 10px;
+        position: relative;
+    }
+
+    .latestBlog::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 2px;
+        background-color: var(--text);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.2s ease;
+    }
+
+    .latestBlog:hover::after {
+        transform: scaleX(1);
+    }
+}

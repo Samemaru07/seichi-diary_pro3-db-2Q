@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+/* ノートパソコン */
+@media screen and (min-width: 281px) and (max-width: 1366px) {
+    .navTitle {
+        margin-top: 30px;
+        margin-left: 3px;
+        margin-bottom: 5px;
+    }
+
+    .navTitleText {
+        font-size: 20px;
+        display: block;
+        margin-left: 8px;
+        text-decoration: none;
+    }
+
+    .animeList {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem 1.5rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-left: 20px;
+        margin-right: 10px;
+        font-family: var(--font-zenmaru-gothic);
+    }
+
+    .animeItem {
+        font-weight: bold;
+    }
+
+    .animeNameLink {
+        display: block;
+        position: relative;
+        text-decoration: none;
+        color: var(--text);
+    }
+
+    .animeNameLink>span {
+        display: inline-block;
+    }
+
+    .animeNameLink::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 1.5px;
+        background-color: var(--text);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.2s ease;
+    }
+
+    .animeNameLink:hover::after {
+        transform: scaleX(1);
+    }
+
+    .animeNameLink>span {
+        padding: 0.2rem 0;
+        white-space: nowrap;
+    }
+
+    .animeNameLink {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 4px;
+        padding-right: 12px;
+    }
+}
+
+
+/* スマホ */
+@media screen and (max-width: 480px) {}
+
+/* モニタ */
+@media screen and (min-width: 1367px) {
+    .navTitle {
+        margin-top: 39px;
+        margin-left: 4px;
+        margin-bottom: 7px;
+    }
+
+    .navTitleText {
+        font-size: 26px;
+        display: block;
+        margin-left: 10px;
+        text-decoration: none;
+    }
+
+    .animeList {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.65rem 2rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-left: 26px;
+        margin-right: 13px;
+        font-family: var(--font-zenmaru-gothic);
+        font-size: 17px;
+    }
+
+    .animeItem {
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    .animeNameLink {
+        display: block;
+        position: relative;
+        text-decoration: none;
+        color: var(--text);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 5px;
+        padding-right: 16px;
+    }
+
+    .animeNameLink>span {
+        display: inline-block;
+        padding: 0.26rem 0;
+        white-space: nowrap;
+    }
+
+    .animeNameLink::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 2px;
+        background-color: var(--text);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.2s ease;
+    }
+
+    .animeNameLink:hover::after {
+        transform: scaleX(1);
+    }
+}

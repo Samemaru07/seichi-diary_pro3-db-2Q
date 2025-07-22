@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+/* ノートパソコン */
+@media screen and (min-width: 481px) and (max-width: 1366px) {
+    .navTitle {
+        margin-left: 15px;
+        padding-top: 20px
+    }
+
+    .navTitleText {
+        text-decoration: none;
+        list-style: none;
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .li {
+        list-style: none;
+        margin: 8px 0;
+        text-decoration: none;
+        font-family: var(--font-zenmaru-gothic);
+
+    }
+
+    .regionName {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        padding: 0.3rem 0;
+        padding-left: 20px;
+        padding-right: 70px;
+        transition: border-bottom 0.2s ease;
+    }
+
+    .regionLink {
+        display: block;
+        position: relative;
+        text-decoration: none;
+        width: 100%;
+    }
+
+    .regionName {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        padding: 0.3rem 0;
+        padding-left: 20px;
+        padding-right: 70px;
+        flex: 1;
+        white-space: nowrap;
+    }
+
+    .regionLink::after {
+        content: "";
+        position: absolute;
+        left: 20px;
+        right: 70px;
+        bottom: 0;
+        height: 1.5px;
+        background-color: var(--text);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.2s ease;
+    }
+
+    .regionLink:hover::after {
+        transform: scaleX(1);
+    }
+
+
+
+
+}
+
+
+/* スマホ */
+@media screen and (max-width: 480px) {}
+
+/* モニタ */
+@media screen and (min-width: 1367px) {
+    .navTitle {
+        margin-left: 20px;
+        padding-top: 26px;
+    }
+
+    .navTitleText {
+        text-decoration: none;
+        list-style: none;
+        font-size: 26px;
+        margin-left: 13px;
+    }
+
+    .li {
+        list-style: none;
+        margin: 10px 0;
+        text-decoration: none;
+        font-family: var(--font-zenmaru-gothic);
+        font-size: 17px;
+    }
+
+    .regionName {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        padding: 0.39rem 0;
+        padding-left: 26px;
+        padding-right: 91px;
+        transition: border-bottom 0.2s ease;
+        flex: 1;
+        white-space: nowrap;
+        font-size: 17px;
+    }
+
+    .regionLink {
+        display: block;
+        position: relative;
+        text-decoration: none;
+        width: 100%;
+    }
+
+    .regionLink::after {
+        content: "";
+        position: absolute;
+        left: 26px;
+        right: 91px;
+        bottom: 0;
+        height: 2px;
+        background-color: var(--text);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.2s ease;
+    }
+
+    .regionLink:hover::after {
+        transform: scaleX(1);
+    }
+}

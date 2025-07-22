@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/* 共通 */
+.link {
+    display: block;
+    background-color: var(--btn);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.link:hover {
+    background-color: var(--btnHover);
+    color: white;
+}
+
+.input {
+    border: solid #333 1px;
+    border-radius: 5px;
+}
+
+/* ノートパソコン */
+@media screen and (min-width: 481px)and (max-width: 1366px) {
+    .link {
+        margin-bottom: 30px;
+        padding: 20px 20px;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+
+    .controls {
+        position: absolute;
+        top: 150px;
+        right: 200px;
+    }
+
+    .input {
+        margin-right: 10px;
+    }
+}
+
+/* モニタ */
+@media screen and (min-width: 1367px) {
+    .link {
+        margin-bottom: 39px !important;
+        padding: 26px 26px !important;
+        border-radius: 6.5px !important;
+        font-size: 1.3rem !important;
+    }
+
+    .controls {
+        position: absolute;
+        top: 195px;
+        right: 260px;
+    }
+
+    .input {
+        border-radius: 6.5px;
+        margin-right: 13px;
+    }
+}
+
+/* スマホ */
+@media screen and (max-width: 480px) {
+    .link {
+        margin-bottom: 20px;
+        padding: 15px 15px;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    .controls {
+        position: static;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .input {
+        margin-right: 8px;
+        padding: 8px;
+        font-size: 14px;
+    }
+}

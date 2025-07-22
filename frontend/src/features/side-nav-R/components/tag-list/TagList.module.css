@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+/* 共通レイアウト */
+.navTitleText {
+    font-size: 20px;
+}
+
+.tagList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    font-family: var(--font-zenmaru-gothic);
+}
+
+.tag {
+    white-space: nowrap;
+    text-decoration: none;
+    position: relative;
+}
+
+.tag::before {
+    content: "#";
+    margin-right: 2px;
+}
+
+.tag::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1.5px;
+    background-color: var(--text);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.2s ease;
+}
+
+.tag:hover::after {
+    transform: scaleX(1);
+}
+
+.goToTag {
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+    font-size: 15px;
+    width: 150px;
+    right: -60px;
+}
+
+.goToTag::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1.5px;
+    width: 80%;
+    background-color: var(--text);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.2s ease;
+}
+
+.goToTag:hover::after {
+    transform: scaleX(1);
+}
+
+/* ノートパソコン */
+@media screen and (min-width: 481px) and (max-width: 1366px) {
+    .navTitle {
+        margin-left: 8px;
+        margin-top: 30px;
+    }
+
+    .navTitleText {
+        margin-left: 8px;
+    }
+
+    .tagList {
+        padding-left: 8px;
+        margin-top: 8px;
+    }
+
+    .tag {
+        font-size: 16px;
+    }
+}
+
+/* モニタ */
+@media screen and (min-width: 1367px) {
+    .navTitle {
+        margin-left: 10px;
+        margin-top: 39px;
+    }
+
+    .navTitleText {
+        margin-left: 10px;
+        white-space: nowrap;
+    }
+
+    .tagList {
+        padding-left: 10px;
+        margin-top: 10px;
+    }
+
+    .tag {
+        font-size: 17px;
+    }
+
+    .goToTag {
+        right: -80px;
+    }
+}
+
+/* スマホ */
+@media screen and (max-width: 480px) {}

@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/* ノートパソコン */
+@media screen and (min-width: 481px) and (max-width: 1366px) {}
+
+/* スマホ */
+@media screen and (max-width: 480px) {}
+
+/* モニタ */
+@media screen and (min-width: 1367px) {}

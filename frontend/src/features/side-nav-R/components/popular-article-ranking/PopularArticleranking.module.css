@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+/* ノートパソコン */
+@media screen and (min-width: 481px) and (max-width: 1366px) {
+    .navTitle {
+        margin-left: 5px;
+        padding-top: 20px;
+    }
+
+    .navTitleText {
+        font-size: 17px;
+        margin-right: 5px;
+        margin-left: 3px;
+    }
+
+    .rank1,
+    .rank2,
+    .rank3 {
+        display: inline-block;
+        font-size: 14px;
+        text-wrap: none;
+        position: relative;
+        text-indent: -1.5rem;
+        padding-left: 1.5rem;
+        font-family: var(--font-zenmaru-gothic);
+    }
+
+    .rank1::before {
+        content: "🥇";
+        font-size: 18px;
+    }
+
+    .rank2::before {
+        content: "🥈";
+        font-size: 18px;
+    }
+
+    .rank3::before {
+        content: "🥉";
+        font-size: 18px;
+    }
+
+    .rank1::after,
+    .rank2::after,
+    .rank3::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 1.5px;
+        background-color: var(--text);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.2s ease;
+    }
+
+    .rank1:hover::after,
+    .rank2:hover::after,
+    .rank3:hover::after {
+        transform: scaleX(1);
+    }
+}
+
+/* スマホ */
+@media screen and (max-width: 480px) {}
+
+/* モニタ */
+@media screen and (min-width: 1367px) {
+    .navTitle {
+        margin-left: 7px;
+        padding-top: 26px;
+    }
+
+    .navTitleText {
+        font-size: 20px;
+        margin-right: 7px;
+        margin-left: 4px;
+        white-space: nowrap;
+    }
+
+    .rank1,
+    .rank2,
+    .rank3 {
+        display: inline-block;
+        font-size: 17px;
+        text-wrap: none;
+        position: relative;
+        text-indent: -2rem;
+        padding-left: 2rem;
+        font-family: var(--font-zenmaru-gothic);
+    }
+
+    .rank1::before {
+        content: "🥇";
+        font-size: 18px;
+    }
+
+    .rank2::before {
+        content: "🥈";
+        font-size: 18px;
+    }
+
+    .rank3::before {
+        content: "🥉";
+        font-size: 18px;
+    }
+
+    .rank1::after,
+    .rank2::after,
+    .rank3::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 1.5px;
+        background-color: var(--text);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.2s ease;
+    }
+
+    .rank1:hover::after,
+    .rank2:hover::after,
+    .rank3:hover::after {
+        transform: scaleX(1);
+    }
+}

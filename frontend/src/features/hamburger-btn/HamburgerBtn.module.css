@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+/* 共通 */
+.hamburgerBtnWrapper {
+    background-color: var(--hamburgerBtn);
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.hamburgerBtn {
+    position: absolute;
+    padding: 0 auto;
+}
+
+/* ノートパソコン */
+@media screen and (min-width: 481px) and (max-width: 1366px) {
+    .hamburgerBtnWrapper {
+        width: 50px;
+        height: 50px;
+    }
+
+    .hamburgerBtn {
+        font-size: 40px;
+        width: 50px;
+    }
+}
+
+/* モニタ */
+@media screen and (min-width: 1367px) {
+    .hamburgerBtnWrapper {
+        width: 80px;
+        height: 80px;
+        border-radius: 8px;
+        top: -10px;
+        left: -10px;
+    }
+
+    .hamburgerBtn {
+        font-size: 64px;
+        width: 80px;
+    }
+}
+
+/* スマホ */
+@media screen and (max-width: 480px) {
+    .hamburgerBtnWrapper {
+        width: 50px;
+        height: 50px;
+        border-radius: 8px;
+        top: 10px;
+        left: 10px;
+        z-index: 10;
+    }
+
+    .hamburgerBtn {
+        font-size: 30px;
+        width: 50px;
+    }
+}

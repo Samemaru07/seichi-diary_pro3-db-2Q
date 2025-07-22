@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+/* 共通 */
+.btnWrapper {
+    display: block;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+}
+
+.Twitter\(現X\)Btn,
+.InstagramBtn,
+.技術記事はこちらBtn {
+    display: block;
+    height: auto;
+    text-align: center;
+    font-family: var(--font-contents);
+    font-weight: bold;
+}
+
+.Twitter\(現X\)Btn {
+    background-color: var(--btn);
+    transition: background-color 0.3s ease;
+}
+
+.Twitter\(現X\)Btn:hover {
+    background-color: var(--btnHoverTwitter);
+}
+
+.InstagramBtn {
+    background-color: var(--btn);
+    transition: background-color 0.3s ease;
+}
+
+.InstagramBtn:hover {
+    background-color: var(--btnHoverInsta)
+}
+
+.backBtnWrapper {
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+.backBtn {
+    font-family: var(--font-contents);
+    font-weight: bold;
+}
+
+.backBtn::before {
+    content: "<  <    ";
+}
+
+.backBtn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: var(--text);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.2s ease;
+}
+
+.backBtnWrapper:hover .backBtn::after {
+    transform: scaleX(1);
+}
+
+/* ノートパソコン */
+@media screen and (min-width: 481px) and (max-width: 1366px) {
+    .btns {
+        margin-top: 80px;
+    }
+
+    .Twitter\(現X\)Btn,
+    .InstagramBtn,
+    .技術記事はこちらBtn {
+        width: 250px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 18px;
+        border-radius: 40px;
+    }
+
+    .技術記事はこちらBtn {
+        margin-top: 100px;
+    }
+
+    .Twitter\(現X\)Btn {
+        margin-right: -15px;
+    }
+
+    .ZennBtn {
+        margin-left: -15px;
+    }
+
+    .backBtnWrapper {
+        margin-top: 60px;
+        width: 80px;
+        margin: 30px auto;
+    }
+
+    .backBtn {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .backBtn::after {
+        bottom: 16px;
+        height: 2px;
+    }
+}
+
+/* スマホ */
+@media screen and (max-width: 480px) {
+    .btns {
+        flex-direction: column;
+        margin-top: 40px;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .Twitter\(現X\)Btn,
+    .InstagramBtn,
+    .技術記事はこちらBtn {
+        width: 280px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 16px;
+        border-radius: 30px;
+    }
+
+    .Twitter\(現X\)Btn {
+        margin-right: 0;
+    }
+
+    .ZennBtn {
+        margin-left: 0;
+    }
+
+    .backBtnWrapper {
+        margin-top: 40px;
+        width: 80px;
+        margin: 20px auto;
+    }
+
+    .backBtn {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 16px;
+    }
+
+    .backBtn::after {
+        bottom: 12px;
+        height: 2px;
+    }
+}
+
+/* モニタ */
+@media screen and (min-width: 1367px) {
+    .btns {
+        margin-top: 104px;
+    }
+
+    .Twitter\(現X\)Btn,
+    .InstagramBtn,
+    .技術記事はこちらBtn {
+        width: 325px;
+        padding-top: 26px;
+        padding-bottom: 26px;
+        font-size: 23px;
+        border-radius: 52px;
+    }
+
+    .技術記事はこちらBtn {
+        margin-top: 130px;
+    }
+
+    .Twitter\(現X\)Btn {
+        margin-right: -20px;
+    }
+
+    .ZennBtn {
+        margin-left: -20px;
+    }
+
+    .backBtnWrapper {
+        margin-top: 100px;
+        width: 120px;
+        margin: 40px auto;
+    }
+
+    .backBtn {
+        padding-top: 28px;
+        padding-bottom: 28px;
+        font-size: 22px;
+    }
+
+    .backBtn::after {
+        bottom: 20px;
+        height: 3px;
+    }
+}

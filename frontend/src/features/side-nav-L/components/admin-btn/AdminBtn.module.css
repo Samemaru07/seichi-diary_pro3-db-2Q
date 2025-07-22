@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/* ノートパソコン */
+@media screen and (min-width: 481px) and (max-width: 1366px) {
+    .navTitle {
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+
+    .navTitleText {
+        display: inline-block;
+        position: relative;
+    }
+
+    .navTitleText::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var(--text);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.2s ease;
+    }
+
+    .navTitleText:hover::after {
+        transform: scaleX(1);
+    }
+
+    .navTitleText {
+        margin-bottom: 60px;
+    }
+}
+
+/* スマホ */
+@media screen and (max-width: 480px) {}
+
+/* モニタ */
+@media screen and (min-width: 1367px) {}

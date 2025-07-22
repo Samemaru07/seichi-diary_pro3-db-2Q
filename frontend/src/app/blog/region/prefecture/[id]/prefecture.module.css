@@ -1,0 +1,407 @@
+@charset "UTF-8";
+
+/* 共通 */
+.link {
+    display: block;
+    background-color: var(--btn);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btnWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+/* コメントセクション共通 */
+.commentTopWrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.userName {
+    font-weight: bold;
+    color: var(--text);
+}
+
+.date {
+    color: var(--text);
+}
+
+.commentH3 {
+    margin-bottom: 20px;
+}
+
+.comment {
+    background-color: var(--commentBackground);
+    border-radius: 5px;
+}
+
+.commentContent {
+    color: var(--text);
+}
+
+.commentContainer {
+    margin-bottom: 50px;
+}
+
+.submitBtn {
+    background-color: var(--commentSubmitBtn);
+    border-radius: 10px;
+    font-family: var(--font-contents);
+    font-weight: bold;
+}
+
+.newUsername {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.newUsernameInput {
+    border: solid var(--text) 1px;
+    border-radius: 5px;
+    color: #000000;
+}
+
+.newComment {
+    border: solid var(--text) 1px;
+    border-radius: 5px;
+    padding: 10px 10px;
+    color: #000000;
+}
+
+.replyWrapper {
+    border-left: 2px solid #ccc;
+    margin-top: 0.5rem;
+}
+
+.replyToggleBtn {
+    border-bottom: solid #333 2px;
+    color: var(--text);
+}
+
+.replyNameInput {
+    display: block;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.replyTextarea {
+    color: #000000;
+}
+
+.replySubmitBtn {
+    color: #000000;
+    background-color: var(--commentSubmitBtn);
+    border-radius: 5px;
+}
+
+.commentTitle {
+    font-family: var(--font-contents);
+}
+
+/* ノートパソコン */
+@media screen and (min-width: 481px) and (max-width: 1366px) {
+    .link {
+        margin-bottom: 30px;
+        padding: 20px 20px;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+
+    .link:hover {
+        background-color: var(--btnHover);
+        color: white;
+    }
+
+    .btnWrapper {
+        gap: 50px;
+        width: 850px;
+    }
+
+    .btn {
+        width: 130px;
+        height: 50px;
+        border-radius: 20px;
+        font-size: 20px;
+    }
+
+    /* コメントセクション固有 */
+    .date {
+        margin-left: 30px;
+    }
+
+    .comment {
+        padding: 1px 20px 5px;
+    }
+
+    .commentContent {
+        margin-bottom: 20px;
+    }
+
+    .commentContainer {
+        display: flex;
+        align-items: end;
+    }
+
+    .submitBtn {
+        width: 70px;
+        padding: 5px 0;
+        margin-left: 20px;
+    }
+
+    .newUsernameInput {
+        margin-left: 10px;
+        padding: 0 10px;
+    }
+
+    .newComment {
+        width: 600px;
+        height: 100px;
+    }
+
+    .replyWrapper {
+        margin-left: 2rem;
+        padding-left: 1rem;
+    }
+
+    .replyToggleBtn {
+        margin-bottom: 20px;
+    }
+
+    .replyTextarea {
+        width: 300px;
+        height: 100px;
+    }
+
+    .replySubmitBtn {
+        padding: 5px 5px;
+        margin-left: 10px;
+        position: absolute;
+        margin-top: 65px;
+    }
+
+    .commentTitle {
+        font-size: 2rem;
+        margin-bottom: 24px;
+    }
+
+    .sectionMargin {
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+}
+
+/* モニタ */
+@media screen and (min-width: 1367px) {
+    .link {
+        margin-bottom: 39px !important;
+        padding: 26px 26px !important;
+        border-radius: 6.5px !important;
+        font-size: 1.3rem !important;
+    }
+
+    .link:hover {
+        background-color: var(--btnHover) !important;
+        color: white !important;
+    }
+
+    .btnWrapper {
+        gap: 65px;
+        width: 1105px;
+    }
+
+    .btn {
+        width: 169px;
+        height: 65px;
+        border-radius: 26px;
+        font-size: 26px;
+    }
+
+    /* コメントセクション固有 */
+    .date {
+        margin-left: 30px;
+    }
+
+    .comment {
+        padding: 1px 20px 5px;
+    }
+
+    .commentContent {
+        margin-bottom: 20px;
+    }
+
+    .commentContainer {
+        display: flex;
+        align-items: end;
+    }
+
+    .submitBtn {
+        width: 70px;
+        padding: 5px 0;
+        margin-left: 20px;
+    }
+
+    .newUsernameInput {
+        margin-left: 10px;
+        padding: 0 10px;
+    }
+
+    .newComment {
+        width: 600px;
+        height: 100px;
+    }
+
+    .replyWrapper {
+        margin-left: 2rem;
+        padding-left: 1rem;
+    }
+
+    .replyToggleBtn {
+        margin-bottom: 20px;
+    }
+
+    .replyTextarea {
+        width: 300px;
+        height: 100px;
+    }
+
+    .replySubmitBtn {
+        padding: 5px 5px;
+        margin-left: 10px;
+        position: absolute;
+        margin-top: 65px;
+    }
+
+    .commentTitle {
+        font-size: 2.5rem;
+        margin-bottom: 32px;
+    }
+
+    .sectionMargin {
+        margin-top: 72px;
+        margin-bottom: 72px;
+    }
+}
+
+/* スマホ */
+@media screen and (max-width: 480px) {
+
+    /* コメントセクション固有 */
+    .userName {
+        font-size: 14px;
+    }
+
+    .date {
+        margin-left: 15px;
+        font-size: 12px;
+    }
+
+    .commentH3 {
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+
+    .comment {
+        padding: 1px 8px 5px;
+    }
+
+    .commentContent {
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+
+    .commentContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 30px;
+    }
+
+    .submitBtn {
+        width: 100%;
+        padding: 8px 0;
+        margin-left: 0;
+        margin-top: 8px;
+        font-size: 15px;
+    }
+
+    .newUsername {
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+
+    .newUsernameInput {
+        margin-left: 8px;
+        padding: 6px;
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        font-size: 15px;
+    }
+
+    .newComment {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        height: 60px;
+        padding: 8px;
+        font-size: 15px;
+    }
+
+    .replyWrapper {
+        margin-left: 1rem;
+        padding-left: 0.5rem;
+    }
+
+    .replyToggleBtn {
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+
+    .replyNameInput {
+        margin-bottom: 8px;
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        font-size: 15px;
+        padding: 6px;
+    }
+
+    .replyTextarea {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        height: 60px;
+        font-size: 15px;
+        padding: 8px;
+    }
+
+    .replySubmitBtn {
+        padding: 8px 0;
+        margin-left: 0;
+        margin-top: 8px;
+        position: static;
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .commentTitle {
+        font-size: 1.3rem;
+        margin-bottom: 18px;
+    }
+
+    .sectionMargin {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+}
