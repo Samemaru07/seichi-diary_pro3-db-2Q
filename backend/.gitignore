@@ -1,0 +1,36 @@
+# Laravel: OS系一時ファイル
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Laravel: バックアップや出力ファイル
+*.sql
+*.sqlite
+*.sqlite3
+*.dump
+*.tar
+*.tar.gz
+*.zip
+*.tgz
+
+# Laravel: 構成・依存
+.env
+.env.*
+/vendor
+/node_modules
+
+# Laravel: ストレージ
+/storage/*.key
+/storage/logs/*
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/app/public/*
+# or keep folders you want to include
+
+# Laravel: キャッシュ・テスト
+/bootstrap/cache/*.php
+.phpunit.result.cache

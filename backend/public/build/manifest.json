@@ -1,0 +1,45 @@
+{
+  "public/css/admin/style.css": {
+    "file": "assets/style-b_czIVRW.css",
+    "src": "public/css/admin/style.css",
+    "isEntry": true
+  },
+  "public/css/create/style.css": {
+    "file": "assets/style-Bo1a_DJu.css",
+    "src": "public/css/create/style.css",
+    "isEntry": true
+  },
+  "public/css/dashboard/style.css": {
+    "file": "assets/style-CZN9p8J5.css",
+    "src": "public/css/dashboard/style.css",
+    "isEntry": true
+  },
+  "public/css/edit/style.css": {
+    "file": "assets/style-CIqYTSk8.css",
+    "src": "public/css/edit/style.css",
+    "isEntry": true
+  },
+  "public/css/global.css": {
+    "file": "assets/global-C_o2TZCi.css",
+    "src": "public/css/global.css",
+    "isEntry": true
+  },
+  "public/js/anime-register.js": {
+    "file": "assets/anime-register-DJFEF31u.js",
+    "name": "anime-register",
+    "src": "public/js/anime-register.js",
+    "isEntry": true
+  },
+  "public/js/main.js": {
+    "file": "assets/main-CLBNjHip.js",
+    "name": "main",
+    "src": "public/js/main.js",
+    "isEntry": true
+  },
+  "public/js/upload.js": {
+    "file": "assets/upload-B6nXm6TM.js",
+    "name": "upload",
+    "src": "public/js/upload.js",
+    "isEntry": true
+  }
+}

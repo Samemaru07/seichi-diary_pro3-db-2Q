@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+/* ノートパソコン */
+@media screen and (min-width: 480px) and (max-width: 1366px) {
+    h1 {
+        font-weight: 400;
+    }
+
+    .titleAnimeWrapper {
+        display: flex;
+        gap: 20px;
+    }
+
+    .titleWrapper {
+        font-size: 20px;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .titleBox {
+        width: 300px;
+        height: 30px;
+        font-size: 25px;
+        width: 600px;
+    }
+
+    .animeNameContainer {
+        display: flexbox;
+        flex-wrap: wrap;
+        gap: 12px;
+        display: none;
+        margin-top: 10px;
+    }
+
+    .animeNameBtn,
+    .prefectureBtn {
+        display: block;
+        width: 100px;
+        font-size: 20px;
+        margin-bottom: 30px;
+        margin-top: 40px;
+    }
+
+    .readsWrapper {
+        margin-top: 20px;
+        display: flex;
+        gap: 40px;
+    }
+
+    .readsBox {
+        /* display: block; */
+        width: 250px;
+        height: 30px;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .imageWrapper {
+        margin-top: 40px;
+    }
+
+    .imageInput {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .contentWrapper {
+        margin-top: 40px;
+        font-family: "Zen Maru Gothic", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .contentTitle {
+        font-size: 30px;
+        font-family: "Yusei Magic", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .newAnimeBox {
+        display: block;
+        margin-top: 30px;
+    }
+
+    .topWrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .backDashboard {
+        height: 20px;
+        margin-left: 40px;
+    }
+
+    .animeLabel {
+        display: inline-block;
+        width: 120px;
+    }
+
+    .newAnimeName {
+        display: block;
+        width: 300px;
+        height: 30px;
+        margin-bottom: 30px;
+    }
+
+    .regionNewAnime {
+        width: 150px;
+        cursor: pointer;
+        padding: 10px 10px;
+        font-size: 16px;
+    }
+
+    .prefectures {
+        margin-bottom: 30px;
+        width: 120px;
+    }
+
+    .tags {
+        width: 200px;
+        height: 30px;
+    }
+
+    .urlCopyBtn {
+        margin-bottom: 40px;
+        font-size: 20px;
+    }
+
+    .visitDay {
+        font-size: 18px;
+    }
+
+    .submitBtn {
+        display: block;
+        font-size: 20px;
+        margin: 40px auto;
+        padding: 10px 20px;
+        background-color: #faf0e6;
+        border-radius: 5px;
+        cursor: pointer;
+        border: solid #333 1px;
+    }
+
+    .draftBtn {
+        display: block;
+        margin: 40px auto;
+        font-size: 15px;
+        padding: 5px 10px;
+        background-color: #f8f8ff;
+        border-radius:5px;
+        cursor: pointer;
+        border: solid #333 1px;
+    }
+
+    .submitBtn:hover,
+    .draftBtn:hover {
+        background-color: rgb(200, 200, 200);
+    }
+
+}
+
+/* モニタ */
+@media screen and (min-width: 481px) {}

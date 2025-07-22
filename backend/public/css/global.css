@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/* ノートパソコン */
+@media screen and (min-width: 481px) and (max-width: 1366px) {
+
+    body {
+        font-family: "Yusei Magic", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+/* モニタ */
+@media screen and (min-width: 1367px) {}
